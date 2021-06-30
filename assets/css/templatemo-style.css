@@ -267,6 +267,22 @@ html {
 .menu-close {
   cursor: pointer;
 }
+.img-small{
+    height:10px;
+    width:10px;
+}
+.activecolor{
+    
+    background-color: #a43f49;
+    color: #fff;
+    display: flex;
+}
+
+li p {
+    font-size: 25px;
+        margin-top: 2px;
+}
+
 
 #menu-close {
     cursor: pointer;
@@ -376,12 +392,13 @@ button:hover {
 
 .right-image-post h4,
 .left-image-post h4 {
-    margin-top: 0px;
+    margin-top: 43px;
 }
 
 .right-image-post p,
 .left-image-post p {
-    margin-top: 20px;
+    margin-top: 2px;
+    padding-left: 19px;
 }
 
 .right-image-post .white-button,
