@@ -2,17 +2,24 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
+
 import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 import Avatar from '@material-ui/core/Avatar';
+import Icon from '@material-ui/core/Icon'
+import AboutUs from '../pages/AboutUs'
+
+
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
 
 const drawerWidth = 215;
@@ -20,6 +27,11 @@ const drawerWidth = 215;
 const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
+        
+    },
+    menuIcon:{
+        position: 'relative',
+        top: '4px'
     },
     appBar: {
         width: `calc(100% - ${drawerWidth}px)`,
@@ -52,22 +64,57 @@ const useStyles = makeStyles((theme) => ({
         marginLeft:'auto',
         marginRight:'auto',
         marginTop:23,
+    },
+    listItemLink:{
+        display: 'flex',
+        color: 'white',
+        textDecoration: 'none',
+        textAlign: 'center'
     }
 }));
 
+const navMenuItem =  [  
+                        {
+                            'title':'About Me',
+                            'link':'about-me',
+                            'icon':'personIcon',
+                        },
+                        {
+                            'title':'What I’m good at',
+                            'link':'what-i-am-good-at',
+                            'icon':'code',
+                        },                        
+                        {
+                            'title':'My Work',
+                            'link':'my-work',
+                            'icon':'work',
+                        },                        
+                        {
+                            'title':'Contact Me',
+                            'link':'contact-me',
+                            'icon':'contacts',
+                        },                                               
+                        {
+                            'title':'Certificate',
+                            'link':'certificate',
+                            'icon':'apps',
+                        },                                            
+                        {
+                            'title':'Resume',
+                            'link':'resume',
+                            'icon':'description',
+                        },
+
+                    ];
+
+
 export default function Layout({ children }, ...props) {
     const classes = useStyles();
-
     return (
         <div className={classes.root}>
+            <Router>
             <CssBaseline />
-            <AppBar position="fixed" className={classes.appBar}>
-                <Toolbar>
-                    <Typography variant="h6" noWrap>
-                        Permanent drawer
-                    </Typography>
-                </Toolbar>
-            </AppBar>
+           
             <Drawer
                 className={classes.drawer}
                 variant="permanent"
@@ -87,10 +134,14 @@ export default function Layout({ children }, ...props) {
                 </Typography>
                 <Divider />
                 <List>
-                    {['About Me', 'What I’m good at', 'My Work', 'Contact Me', 'Resume'].map((text, index) => (
-                        <ListItem  className={classes.listItem} button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
+                    {navMenuItem.map((NavMenu, index) => (
+                        <ListItem  className={classes.listItem} button key={NavMenu.title}>
+                            <Link className={classes.listItemLink} to={NavMenu.link}>
+                                <ListItemIcon className={classes.menuIcon} >
+                                    <Icon>{NavMenu.icon}</Icon>
+                                </ListItemIcon>
+                                <ListItemText primary={NavMenu.title} />
+                            </Link>
                         </ListItem>
                     ))}
                 </List>
@@ -98,8 +149,28 @@ export default function Layout({ children }, ...props) {
             </Drawer>
             <main className={classes.content}>
                 <div className={classes.toolbar} />
-                {children}
+                
+      <div>
+      
+
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        
+        <Switch>
+          <Route path="/about-me" component={AboutUs} >
+          </Route>
+          <Route path="/users">
+            Users
+          </Route>
+          <Route path="/">
+            Home
+          </Route>
+        </Switch>
+      </div>
+ 
             </main>
+
+            </Router>
         </div>
     );
 }
