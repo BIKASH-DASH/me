@@ -5,18 +5,33 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import Box from '@material-ui/core/Box';
+import { SocialIcon } from 'react-social-icons';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
-
+import Grid from '@material-ui/core/Grid';
 const drawerWidth = 215;
 const useStyles = makeStyles((theme) => ({
+  social:{
+    display:'flex',
+    justifyContent: 'center',
+    paddingTop:5
+  },
+  aboutme:{
+    textAlign:'left'
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
   paperContainer: {
     backgroundImage: "url(" + "/images/bgbikash-dash.jpg" + ")",
     backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
+    backgroundRepeat: 'no-repeat',
+    height:250,
+    backgroundSize:[239, 297],
+    paddingTop:268
 },
   AppBar:{
     left:drawerWidth,
@@ -63,18 +78,47 @@ export default function ElevateAppBar(props) {
         </AppBar>
       </ElevationScroll>
       <Toolbar />
-      <Container className={classes.paperContainer}>
-      
-        <Box my={2}>
-          {[...new Array(12)]
-            .map(
-              () => `Cras mattis consectetur purus sit amet fermentum.
-Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
-            )
-            .join('\n')}
-        </Box>
+      <Container>
+      <Paper className={classes.paper}>
+      <Grid container spacing={3}>
+        
+        <Grid item xs={12} sm={6}>
+          <div className={classes.paper}>
+          Hey! 👋 I'm <Typography color="secondary" variant="h6" gutterBottom>Bikash Dash</Typography>
+
+          Who Am I?
+I'm a self-taught programmer who is learning to code for fun and enjoys learning new things. I have the hope of one day working at a company as a software developer, and until then I'll keep working on learning each day and enjoying the process. I have a fairly outgoing personality, so feel free to say hello!
+          </div>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <div className={classes.paperContainer}>
+            <div className={classes.social} >
+              <SocialIcon url="https://twitter.com/bikashd18327436" />
+              <SocialIcon url="https://www.facebook.com/profile.php?id=100010879663940" />
+              <SocialIcon url="https://stackoverflow.com/users/16320049/bikash-dash" />
+              <SocialIcon url="https://www.linkedin.com/in/tobikash-dash/" />
+              <SocialIcon url="https://github.com/bikash-dash" />
+
+            </div>
+          </div>
+        </Grid>
+        <Grid item xs={12}>
+          <div className={classes.paper}>
+          <Typography variant="h6" color="secondary" className={classes.aboutme} >ABOUT ME</Typography>
+          <ul className={classes.aboutme}>
+            <li>9+ years top-rated track record (Web and Mobile Application Development)</li>
+            <li>Tech Stack: JavaScript, Node.js, React, Angular, Vue.js, Express.js,PHP,Laravel,Wordpress, MySQL and PostgreSQL</li>
+            <li>Amazon Web Services</li>
+            <li>Perfectly adapted to your business processes and can offer you my ideas for implementation</li>
+            <li>Solid experience in the development of payment gateway solutions and crypto banking application</li>
+          </ul>
+
+
+          </div>
+        </Grid>
+        
+      </Grid>
+      </Paper >
       </Container>
     </div>
   );

@@ -12,6 +12,11 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
 import Icon from '@material-ui/core/Icon'
 import AboutUs from '../pages/AboutUs'
+import WhatImGoodAt from '../pages/WhatImGoodAt'
+import MyWork from '../pages/MyWork'
+import Resume from '../pages/Resume'
+import Certificate from '../pages/Certificate'
+import ContactMe from '../pages/ContactMe'
 
 
 import {
@@ -27,6 +32,7 @@ const drawerWidth = 215;
 const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
+        cursor:'default'
         
     },
     menuIcon:{
@@ -76,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
 const navMenuItem =  [  
                         {
                             'title':'About Me',
-                            'link':'about-me',
+                            'link':'/',
                             'icon':'personIcon',
                         },
                         {
@@ -157,14 +163,14 @@ export default function Layout({ children }, ...props) {
             renders the first one that matches the current URL. */}
         
         <Switch>
-          <Route path="/about-me" component={AboutUs} >
-          </Route>
-          <Route path="/users">
-            Users
-          </Route>
-          <Route path="/">
-            Home
-          </Route>
+          <Route exact path="/" component={AboutUs} />
+          <Route exact path="/what-i-am-good-at" component={WhatImGoodAt} />
+          <Route exact path="/my-work" component={MyWork} />
+          <Route exact path="/contact-me" component={ContactMe} />
+          <Route exact path="/certificate" component={Certificate} />
+          <Route exact path="/resume" component={Resume} />
+
+     
         </Switch>
       </div>
  
