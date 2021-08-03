@@ -10,9 +10,21 @@ import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import PhoneIcon from '@material-ui/icons/Phone';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 const drawerWidth = 215;
 
 const useStyles = makeStyles((theme) => ({
+  paperIcon:{
+    marginTop:10,
+  },
+  paperText:{
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+    top:3
+  },
     social:{
       display:'flex',
       justifyContent: 'center',
@@ -25,6 +37,9 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(2),
       textAlign: 'center',
       color: theme.palette.text.secondary,
+      top:3,
+      display: 'flex',
+      justifyContent: 'center'
     },
     paperContainer: {
       backgroundImage: "url(" + "/images/bgbikash-dash.jpg" + ")",
@@ -71,6 +86,19 @@ export default function ContactMe(props) {
       </ElevationScroll>
       <Toolbar />
       <Container>
+      <Grid container spacing={3}>
+        <Grid item xs={12}>
+          <Paper className={classes.paper}>
+           <PhoneIcon className={classes.paperIcon} /> <span className={classes.paperText}> Phone :  +91 9937090484 </span>
+          </Paper>
+          <Paper className={classes.paper}>
+            <MailOutlineIcon className={classes.paperIcon} /><span className={classes.paperText}>Email : <a  href="mailto:tobikashdash@gmail.com">tobikashdash@gmail.com</a></span>
+          </Paper>
+          <Paper className={classes.paper}>
+          <WhatsAppIcon className={classes.paperIcon}/><span className={classes.paperText}> Whatsapp : <a  href="https://wa.link/uwkbel">https://wa.link/uwkbel</a> </span>
+          </Paper>
+        </Grid>
+        </Grid>
       </Container>
         </div>
     )

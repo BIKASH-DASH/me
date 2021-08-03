@@ -10,6 +10,11 @@ import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
+import GetAppIcon from '@material-ui/icons/GetApp';
 const drawerWidth = 215;
 
 const useStyles = makeStyles((theme) => ({
@@ -71,6 +76,38 @@ export default function Certificate(props) {
       </ElevationScroll>
       <Toolbar />
       <Container>
+      <Grid container spacing={3}>
+       
+        <Grid item xs={12} sm={6}>
+          <Paper className={classes.paper}>
+          <Card className={classes.root} variant="outlined">
+      <CardContent>
+        <Typography className={classes.title} color="textSecondary" gutterBottom>
+          Word of the Day
+        </Typography>
+        <Typography variant="h5" component="h2">
+          
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          adjective
+        </Typography>
+        <Typography variant="body2" component="p">
+          well meaning and kindly.
+          <br />
+          
+        </Typography>
+      </CardContent>
+      <CardActions>
+         <a href=""><GetAppIcon/></a>
+      </CardActions>
+    </Card>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Paper className={classes.paper}>xs=12 sm=6</Paper>
+        </Grid>
+        
+      </Grid>
       </Container>
         </div>
     )
