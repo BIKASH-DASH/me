@@ -15,9 +15,19 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import GetAppIcon from '@material-ui/icons/GetApp';
+import CardMedia from '@material-ui/core/CardMedia';
 const drawerWidth = 215;
 
 const useStyles = makeStyles((theme) => ({
+  media:{
+    height: 340,
+  },
+    title:{
+      textAlign:'left',
+      padding:2,
+      background:"#a43f49",
+      color:"white" 
+    },
     social:{
       display:'flex',
       justifyContent: 'center',
@@ -83,16 +93,19 @@ export default function Certificate(props) {
           <Card className={classes.root} variant="outlined">
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Word of the Day
+          10th Certificate
         </Typography>
-        <Typography variant="h5" component="h2">
-          
-        </Typography>
+        <CardMedia
+      className={classes.media}
+      image="images/10thbord s.jpg"
+      title="Foodzo"
+      
+    />
         <Typography className={classes.pos} color="textSecondary">
-          adjective
+          passed:2007
         </Typography>
         <Typography variant="body2" component="p">
-          well meaning and kindly.
+          school : panchayat high school sosahandi
           <br />
           
         </Typography>
@@ -104,7 +117,116 @@ export default function Certificate(props) {
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper}>xs=12 sm=6</Paper>
+          <Paper className={classes.paper}>
+          <Card className={classes.root} variant="outlined">
+      <CardContent>
+        <Typography className={classes.title} color="textSecondary" gutterBottom>
+          +2 Bord Certificate
+        </Typography>
+        <CardMedia
+      className={classes.media}
+      image="images/+2-bord.jpg"
+      title="Foodzo"
+      
+    />
+        <Typography className={classes.pos} color="textSecondary">
+          passed:2009
+        </Typography>
+        <Typography variant="body2" component="p">
+        college : bhairaba mahavidyalaya borigumma
+          <br />
+          
+        </Typography>
+      </CardContent>
+      <CardActions>
+         <a href=""><GetAppIcon/></a>
+      </CardActions>
+    </Card>
+          </Paper>
+        </Grid>
+
+        <Grid item xs={12} sm={6}>
+          <Paper className={classes.paper}>
+          <Card className={classes.root} variant="outlined">
+      <CardContent>
+        <Typography className={classes.title} color="textSecondary" gutterBottom>
+          Bsc Bord Certificate
+        </Typography>
+        <CardMedia
+      className={classes.media}
+      image="images/IMG_20180218_082720.jpg"
+      title="Foodzo"
+      
+    />
+        <Typography className={classes.pos} color="textSecondary">
+          passed:2013
+        </Typography>
+        <Typography variant="body2" component="p">
+        University : Kuvempu University Karnataka
+          <br />
+          
+        </Typography>
+      </CardContent>
+      <CardActions>
+         <a href=""><GetAppIcon/></a>
+      </CardActions>
+    </Card>
+          </Paper>
+        </Grid>
+
+        <Grid item xs={12} sm={6}>
+          <Paper className={classes.paper}>
+          <Card className={classes.root} variant="outlined">
+      <CardContent>
+        <Typography className={classes.title} color="textSecondary" gutterBottom>
+          GNIIT Certificate
+        </Typography>
+        <CardMedia
+      className={classes.media}
+      image="images/gniit.jpg"
+      title="Foodzo"
+      
+    />
+        <Typography className={classes.pos} color="textSecondary">
+          passed:2014
+        </Typography>
+        <Typography variant="body2" component="p">
+        University : NIIT
+          <br />
+          
+        </Typography>
+      </CardContent>
+      <CardActions>
+         <a href=""><GetAppIcon/></a>
+      </CardActions>
+    </Card>
+          </Paper>
+        </Grid>
+
+        <Grid item xs={12} sm={6}>
+          <Paper className={classes.paper}>
+          <Card className={classes.root} variant="outlined">
+      <CardContent>
+        <Typography className={classes.title} color="textSecondary" gutterBottom>
+        Permanent Account Number
+        </Typography>
+        <CardMedia
+      className={classes.media}
+      image="images/0001.jpg"
+      title="Foodzo"
+      
+    />
+        <Typography variant="body2" component="p">
+        Govt of India
+          <br />
+          
+        </Typography>
+      </CardContent>
+      <CardActions>
+         <a href=""><GetAppIcon/></a>
+      </CardActions>
+    </Card>
+          </Paper>
         </Grid>
         
       </Grid>
