@@ -5,11 +5,9 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import { SocialIcon } from 'react-social-icons';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
+import DocViewer from "react-doc-viewer";
 const drawerWidth = 215;
 
 const useStyles = makeStyles((theme) => ({
@@ -59,6 +57,9 @@ const useStyles = makeStyles((theme) => ({
   
 export default function Resume(props) {
     const classes = useStyles();
+    const docs = [
+      { uri: "http://localhost:3000/vikash's%20Resume.pdf" }
+    ];
     return (
         <div>
              <CssBaseline />
@@ -71,6 +72,7 @@ export default function Resume(props) {
       </ElevationScroll>
       <Toolbar />
       <Container>
+      <DocViewer documents={docs} />
       </Container>
         </div>
     )
