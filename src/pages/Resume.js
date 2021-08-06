@@ -57,8 +57,9 @@ const useStyles = makeStyles((theme) => ({
   
 export default function Resume(props) {
     const classes = useStyles();
+    const host = window.location.protocol + "//" + window.location.host;
     const docs = [
-      { uri: "http://localhost:3000/vikash's%20Resume.pdf" }
+      { uri: host+"/bikash-dash.docx" }
     ];
     return (
         <div>
