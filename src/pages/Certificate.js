@@ -95,6 +95,11 @@ const CertificateGridData = [
     img:"images/0001.jpg",
     desc:"Govt of India",
   },
+  {
+    title:"Aadhar card",
+    img:"images/Aadhaar-1.jpg",
+    desc:"Govt of India",
+  },
 
 ]
 
