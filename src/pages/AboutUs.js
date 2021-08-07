@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
   },
   paperContainer: {
-    backgroundImage: "url(" + "/images/bgbikash-dash.jpg" + ")",
+    backgroundImage: "url(" + "/me/images/bgbikash-dash.jpg" + ")",
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     height:250,
@@ -106,7 +106,7 @@ I'm a self-taught programmer who is learning to code for fun and enjoys learning
           <div className={classes.paper}>
           <Typography variant="h6" color="secondary" className={classes.aboutme} >ABOUT ME</Typography>
           <ul className={classes.aboutme}>
-            <li>9+ years top-rated track record (Web and Mobile Application Development)</li>
+            <li>7+ years top-rated track record (Web and Mobile Application Development)</li>
             <li>Tech Stack: JavaScript, Node.js, React, Angular, Vue.js, Express.js,PHP,Laravel,Wordpress, MySQL and PostgreSQL</li>
             <li>Amazon Web Services</li>
             <li>Perfectly adapted to your business processes and can offer you my ideas for implementation</li>

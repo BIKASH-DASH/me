@@ -164,11 +164,11 @@ export default function Layout({ children }, ...props) {
         
         <Switch>
           <Route  path="/" component={AboutUs} />
-          <Route exact path="/what-i-am-good-at" component={WhatImGoodAt} />
-          <Route exact path="/my-work" component={MyWork} />
-          <Route exact path="/contact-me" component={ContactMe} />
-          <Route exact path="/certificate" component={Certificate} />
-          <Route exact path="/resume" component={Resume} />
+          <Route exact path="/me/what-i-am-good-at" component={WhatImGoodAt} />
+          <Route exact path="/me/my-work" component={MyWork} />
+          <Route exact path="/me/contact-me" component={ContactMe} />
+          <Route exact path="/me/certificate" component={Certificate} />
+          <Route exact path="/me/resume" component={Resume} />
 
      
         </Switch>
