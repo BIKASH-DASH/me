@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "https://bikash-dash.github.io/me/static/css/main.3d7e5ae6.chunk.css",
-    "main.js": "https://bikash-dash.github.io/me/static/js/main.8c39abce.chunk.js",
-    "main.js.map": "https://bikash-dash.github.io/me/static/js/main.8c39abce.chunk.js.map",
+    "main.js": "https://bikash-dash.github.io/me/static/js/main.36ddd746.chunk.js",
+    "main.js.map": "https://bikash-dash.github.io/me/static/js/main.36ddd746.chunk.js.map",
     "runtime-main.js": "https://bikash-dash.github.io/me/static/js/runtime-main.e753e4d7.js",
     "runtime-main.js.map": "https://bikash-dash.github.io/me/static/js/runtime-main.e753e4d7.js.map",
     "static/js/2.6e72d7d0.chunk.js": "https://bikash-dash.github.io/me/static/js/2.6e72d7d0.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.e753e4d7.js",
     "static/js/2.6e72d7d0.chunk.js",
     "static/css/main.3d7e5ae6.chunk.css",
-    "static/js/main.8c39abce.chunk.js"
+    "static/js/main.36ddd746.chunk.js"
   ]
 }
