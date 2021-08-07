@@ -163,7 +163,7 @@ export default function Layout({ children }, ...props) {
             renders the first one that matches the current URL. */}
         
         <Switch>
-          <Route  path="/" component={AboutUs} />
+          <Route exact path="/me" component={AboutUs} />
           <Route exact path="/me/what-i-am-good-at" component={WhatImGoodAt} />
           <Route exact path="/me/my-work" component={MyWork} />
           <Route exact path="/me/contact-me" component={ContactMe} />

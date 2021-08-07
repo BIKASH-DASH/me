@@ -105,7 +105,7 @@ export default function WhatImGoodAt(props) {
       <Grid item xs={12}>
           <Paper className={classes.paper}>
               <div className={classes.header}>
-                  <img src="/logo192.png" />
+                  <img src="/me/logo192.png" />
                   <Typography className={classes.headerText} variant="caption" >React</Typography>
                  
               </div>

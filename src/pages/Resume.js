@@ -59,7 +59,7 @@ export default function Resume(props) {
     const classes = useStyles();
     const host = window.location.protocol + "//" + window.location.host;
     const docs = [
-      { uri: host+"/bikash-dash.docx" }
+      { uri: host+"/me/bikash-dash.docx" }
     ];
     return (
         <div>
