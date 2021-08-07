@@ -82,32 +82,32 @@ const useStyles = makeStyles((theme) => ({
 const navMenuItem =  [  
                         {
                             'title':'About Me',
-                            'link':'/',
+                            'link':'/me',
                             'icon':'personIcon',
                         },
                         {
                             'title':'What I’m good at',
-                            'link':'what-i-am-good-at',
+                            'link':'/me/what-i-am-good-at',
                             'icon':'code',
                         },                        
                         {
                             'title':'My Work',
-                            'link':'my-work',
+                            'link':'/me/my-work',
                             'icon':'work',
                         },                        
                         {
                             'title':'Contact Me',
-                            'link':'contact-me',
+                            'link':'/me/contact-me',
                             'icon':'contacts',
                         },                                               
                         {
                             'title':'Certificate',
-                            'link':'certificate',
+                            'link':'/me/certificate',
                             'icon':'apps',
                         },                                            
                         {
                             'title':'Resume',
-                            'link':'resume',
+                            'link':'/me/resume',
                             'icon':'description',
                         },
 
