@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
       color: theme.palette.text.secondary,
     },
     paperContainer: {
-      backgroundImage: "url(" + "/images/bgbikash-dash.jpg" + ")",
+      backgroundImage: "url(" + "/me/images/bgbikash-dash.jpg" + ")",
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       height:250,
@@ -115,15 +115,15 @@ export default function WhatImGoodAt(props) {
               <Typography variant="body3" className={classes.PaperText} color="textSecondary" component="h4">The Technology I use in React Development are : </Typography>
              <div className={classes.buttonTag}>
              <Button className={classes.Button} variant="contained" color="inherit">
-             <img className={classes.tagImage} src="/images/redux.svg" /> Redux
+             <img className={classes.tagImage} src="/me/images/redux.svg" /> Redux
               </Button>
 
               <Button className={classes.Button}  variant="contained" color="inherit">
-             <img className={classes.tagImage} src="/images/graphql.svg" /> Graphql
+             <img className={classes.tagImage} src="/me/images/graphql.svg" /> Graphql
               </Button>
 
               <Button className={classes.Button} variant="contained" color="inherit">
-             <img className={classes.tagImage} src="/images/elephant.png" /> postgresql
+             <img className={classes.tagImage} src="/me/images/elephant.png" /> postgresql
               </Button>
              </div>
             <div>
@@ -149,15 +149,15 @@ for React Yes, it works with React.
               <Typography variant="body3" className={classes.PaperText} color="textSecondary" component="h4">The Technology I use in Gatsby Development are : </Typography>
              <div className={classes.buttonTag}>
              <Button className={classes.Button} variant="contained" color="inherit">
-             <img className={classes.tagImage} src="/images/tailwindcss.svg" /> Tailwind css
+             <img className={classes.tagImage} src="/me/images/tailwindcss.svg" /> Tailwind css
               </Button>
 
               <Button className={classes.Button}  variant="contained" color="inherit">
-             <img className={classes.tagImage} src="/images/graphql.svg" /> Graphql
+             <img className={classes.tagImage} src="/me/images/graphql.svg" /> Graphql
               </Button>
 
               <Button className={classes.Button} variant="contained" color="inherit">
-             <img className={classes.tagImage} src="/images/elephant.png" /> postgresql
+             <img className={classes.tagImage} src="/me/images/elephant.png" /> postgresql
               </Button>
              </div>
             <div>
@@ -169,7 +169,7 @@ for React Yes, it works with React.
         <Grid item xs={12}>
           <Paper className={classes.paper}>
               <div className={classes.header}>
-              <img src="/images/laravel-2.svg" />
+              <img src="/me/images/laravel-2.svg" />
               <Typography className={classes.headerText} variant="caption" >Laravel</Typography>
               </div>
               <Typography variant="body2" className={classes.PaperText} color="textSecondary" component="p">
@@ -178,11 +178,11 @@ for React Yes, it works with React.
               <Typography variant="body3" className={classes.PaperText} color="textSecondary" component="h4">The Technology I use in Gatsby Development are : </Typography>
              <div className={classes.buttonTag}>
              <Button className={classes.Button} variant="contained" color="inherit">
-             <img className={classes.tagImage} src="/images/Bootstrap_logo.svg.png" /> Bootstrap
+             <img className={classes.tagImage} src="/me/images/Bootstrap_logo.svg.png" /> Bootstrap
               </Button>
 
               <Button className={classes.Button}  variant="contained" color="inherit">
-             <img className={classes.tagImage} src="/images/MySQL-Logo.wine.svg" /> My Sql
+             <img className={classes.tagImage} src="/me/images/MySQL-Logo.wine.svg" /> My Sql
               </Button>
 
              

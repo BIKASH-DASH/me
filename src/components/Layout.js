@@ -130,7 +130,7 @@ export default function Layout({ children }, ...props) {
                 }}
                 anchor="left"
             >   <div className={classes.toolbar} >
-                <Avatar alt="Remy Sharp" src="/images/bikashImages.jpg" className={classes.large} />
+                <Avatar alt="Remy Sharp" src="/me/images/bikashImages.jpg" className={classes.large} />
                 </div>
                 <Typography color="primary" variant="h5" noWrap>
                     BIKASH DASH

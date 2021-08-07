@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
       color: theme.palette.text.secondary,
     },
     paperContainer: {
-      backgroundImage: "url(" + "/images/bgbikash-dash.jpg" + ")",
+      backgroundImage: "url(" + "me/images/bgbikash-dash.jpg" + ")",
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       height: 250,

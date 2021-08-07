@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
   },
   paperContainer: {
-    backgroundImage: "url(" + "/images/bgbikash-dash.jpg" + ")",
+    backgroundImage: "url(" + "/me/images/bgbikash-dash.jpg" + ")",
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     height: 250,
@@ -68,36 +68,36 @@ function ElevationScroll(props) {
 const CertificateGridData = [
   {
     title:"10th Certificate",
-    img:"images/10thbord s.jpg",
+    img:"me/images/10thbord s.jpg",
     desc:"school : panchayat high school sosahandi",
     passOut:"passed:2007"
   },
   {
     title:"+2 Bord Certificate",
-    img:"images/+2-bord.jpg",
+    img:"me/images/+2-bord.jpg",
     desc:"school : bhairaba mahavidyalaya borigumma",
     passOut:"passed:2009"
   },
   {
     title:"Bsc Bord Certificate",
-    img:"images/IMG_20180218_082720.jpg",
+    img:"me/images/IMG_20180218_082720.jpg",
     desc:"University : Kuvempu University Karnataka",
     passOut:"passed:2013"
   },
   {
     title:"GNIIT Certificate",
-    img:"images/gniit.jpg",
+    img:"me/images/gniit.jpg",
     desc:"University : NIIT",
     passOut:"passed:2014"
   },
   {
     title:"Permanent Account Number",
-    img:"images/0001.jpg",
+    img:"me/images/0001.jpg",
     desc:"Govt of India",
   },
   {
     title:"Aadhar card",
-    img:"images/Aadhaar-1.jpg",
+    img:"me/images/Aadhaar-1.jpg",
     desc:"Govt of India",
   },
 

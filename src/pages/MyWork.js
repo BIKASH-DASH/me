@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
       color: theme.palette.text.secondary,
     },
     paperContainer: {
-      backgroundImage: "url(" + "/images/bgbikash-dash.jpg" + ")",
+      backgroundImage: "url(" + "/me/images/bgbikash-dash.jpg" + ")",
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       height:250,
@@ -124,11 +124,11 @@ export default function MyWork(props) {
       </Typography>
       <div className={classes.buttonTag}>
              <Button className={classes.Button} variant="contained" color="inherit">
-             <img className={classes.tagImage} src="/logo192.png" /> React
+             <img className={classes.tagImage} src="/me/logo192.png" /> React
               </Button>
 
               <Button className={classes.Button}  variant="contained" color="inherit">
-             <img className={classes.tagImage} src="/images/elephant.png" /> Postgresql
+             <img className={classes.tagImage} src="/me/images/elephant.png" /> Postgresql
               </Button>
 
              
@@ -160,11 +160,11 @@ export default function MyWork(props) {
           </Typography>
           <div className={classes.buttonTag}>
              <Button className={classes.Button} variant="contained" color="inherit">
-             <img className={classes.tagImage} src="/images/cakephp-seeklogo.com.svg" /> Cakephp
+             <img className={classes.tagImage} src="/me/images/cakephp-seeklogo.com.svg" /> Cakephp
               </Button>
 
               <Button className={classes.Button}  variant="contained" color="inherit">
-             <img className={classes.tagImage} src="/images/MySQL-Logo.wine.svg" /> My Sql
+             <img className={classes.tagImage} src="/me/images/MySQL-Logo.wine.svg" /> My Sql
               </Button>
 
              
@@ -184,7 +184,7 @@ export default function MyWork(props) {
     </Typography>
     <CardMedia
       className={classes.media}
-      image="images/screencapture-evaltechnology-2021-08-02-22_14_09.png"
+      image="/me/images/screencapture-evaltechnology-2021-08-02-22_14_09.png"
       title="Foodzo"
       
     />
@@ -198,11 +198,11 @@ export default function MyWork(props) {
 
       <div className={classes.buttonTag}>
              <Button className={classes.Button} variant="contained" color="inherit">
-             <img className={classes.tagImage} src="/images/gatsby.png" /> Gatsby
+             <img className={classes.tagImage} src="/me/images/gatsby.png" /> Gatsby
               </Button>
 
               <Button className={classes.Button}  variant="contained" color="inherit">
-             <img className={classes.tagImage} src="/images/elephant.png" /> Postgresql
+             <img className={classes.tagImage} src="/me/images/elephant.png" /> Postgresql
               </Button>
 
              
@@ -235,11 +235,11 @@ export default function MyWork(props) {
       </Typography>
       <div className={classes.buttonTag}>
              <Button className={classes.Button} variant="contained" color="inherit">
-             <img className={classes.tagImage} src="/images/laravel-seeklogo.com.svg" /> Laravel
+             <img className={classes.tagImage} src="/me/images/laravel-seeklogo.com.svg" /> Laravel
               </Button>
 
               <Button className={classes.Button}  variant="contained" color="inherit">
-             <img className={classes.tagImage} src="/images/MySQL-Logo.wine.svg" /> My Sql
+             <img className={classes.tagImage} src="/me/images/MySQL-Logo.wine.svg" /> My Sql
               </Button>
 
              
