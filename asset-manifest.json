@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "https://bikash-dash.github.io/me/static/css/main.3d7e5ae6.chunk.css",
-    "main.js": "https://bikash-dash.github.io/me/static/js/main.9876b9a4.chunk.js",
-    "main.js.map": "https://bikash-dash.github.io/me/static/js/main.9876b9a4.chunk.js.map",
+    "main.js": "https://bikash-dash.github.io/me/static/js/main.ebe46094.chunk.js",
+    "main.js.map": "https://bikash-dash.github.io/me/static/js/main.ebe46094.chunk.js.map",
     "runtime-main.js": "https://bikash-dash.github.io/me/static/js/runtime-main.e753e4d7.js",
     "runtime-main.js.map": "https://bikash-dash.github.io/me/static/js/runtime-main.e753e4d7.js.map",
-    "static/js/2.64f96fef.chunk.js": "https://bikash-dash.github.io/me/static/js/2.64f96fef.chunk.js",
-    "static/js/2.64f96fef.chunk.js.map": "https://bikash-dash.github.io/me/static/js/2.64f96fef.chunk.js.map",
+    "static/js/2.4ffd2701.chunk.js": "https://bikash-dash.github.io/me/static/js/2.4ffd2701.chunk.js",
+    "static/js/2.4ffd2701.chunk.js.map": "https://bikash-dash.github.io/me/static/js/2.4ffd2701.chunk.js.map",
     "static/js/3.f24eb17b.chunk.js": "https://bikash-dash.github.io/me/static/js/3.f24eb17b.chunk.js",
     "static/js/3.f24eb17b.chunk.js.map": "https://bikash-dash.github.io/me/static/js/3.f24eb17b.chunk.js.map",
     "index.html": "https://bikash-dash.github.io/me/index.html",
     "static/css/main.3d7e5ae6.chunk.css.map": "https://bikash-dash.github.io/me/static/css/main.3d7e5ae6.chunk.css.map",
-    "static/js/2.64f96fef.chunk.js.LICENSE.txt": "https://bikash-dash.github.io/me/static/js/2.64f96fef.chunk.js.LICENSE.txt"
+    "static/js/2.4ffd2701.chunk.js.LICENSE.txt": "https://bikash-dash.github.io/me/static/js/2.4ffd2701.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e753e4d7.js",
-    "static/js/2.64f96fef.chunk.js",
+    "static/js/2.4ffd2701.chunk.js",
     "static/css/main.3d7e5ae6.chunk.css",
-    "static/js/main.9876b9a4.chunk.js"
+    "static/js/main.ebe46094.chunk.js"
   ]
 }
